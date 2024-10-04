@@ -36,4 +36,6 @@ void concatenation(LinkedList** list1, LinkedList** list2);
 
 LinkedList *squaredList(LinkedList *list);
 
+void display_question3(void);
+
 #endif //LINKEDLIST_H
