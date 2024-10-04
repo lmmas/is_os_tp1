@@ -6,7 +6,7 @@ int main(void) {
     //mainMemoryTest();
     //memoryTest();
 
-    display_question3();
+    //display_question3();
 
     getSizeFile();
     return 0;
