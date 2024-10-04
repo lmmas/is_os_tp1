@@ -11,17 +11,29 @@ typedef struct LinkedList LinkedList;
 struct LinkedList {
     int number;
     LinkedList *next;
+    LinkedList *previous;
 };
 
-LinkedList *initialization() ;
-void insertion(LinkedList *list, int newnumber);
+LinkedList *initialization(int firstnumber);
 
-int display(LinkedList *list);
+void insertion(LinkedList **list, int newnumber);
 
-int sizeList(LinkedList *list);
+int displayList(const LinkedList *list);
+
+void sizeList(LinkedList *list);
 
 void address_value(LinkedList *list);
 
-LinkedList* deleteFirstNumber(LinkedList *list);
+void deleteFirstNumber(LinkedList** list);
+
+void deleteLastNumber(LinkedList** list);
+
+void addLastNumber(LinkedList** list, int newnumber);
+
+void addFirstNumber(LinkedList** list, int newnumber);
+
+void concatenation(LinkedList** list1, LinkedList** list2);
+
+LinkedList *squaredList(LinkedList *list);
 
 #endif //LINKEDLIST_H

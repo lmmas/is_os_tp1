@@ -8,103 +8,160 @@
 
 // INITIALIZATION OF THE LINKED LIST (FIRST TERM)
 
-LinkedList *initialization() {
+LinkedList *initialization(int firstnumber) {
     LinkedList *list = malloc(sizeof(*list));
     if (list == NULL) {
         exit(EXIT_FAILURE);
     }
-    list->number = 0;
-    printf("%d ", list->number);
+    list->number = firstnumber;
     list->next = NULL;
     return list;
 }
 
+
 // INSERTION OF TERMS IN THE LINKED LIST
 
-void insertion(LinkedList *list, int newnumber) {
-    if (list == NULL ) {
-        exit(EXIT_FAILURE);
+void insertion(LinkedList** list, int newnumber) {
+
+    LinkedList *newnode = malloc(sizeof(*newnode));
+    newnode->number = newnumber;
+    newnode->next = NULL;
+    newnode->previous = NULL;
+
+    if (*list == NULL) {
+        *list = newnode;
+        return;
     }
-
-    list->number = newnumber;
-    printf("%d ", newnumber);
-    list->next ;
-
-
-
-
+    LinkedList* current = *list;
+    while (current->next != NULL) {
+        current = current->next;
+    }
+    current->next = newnode;
+    newnode->previous = current;
 }
 
-/*
-int display(LinkedList *list) {
-    if (list == NULL) {
-        exit(EXIT_FAILURE);
-    }
-    while (current != NULL) {
-        printf("%d ", current->number);
-        current = current->next;
+// DISPLAY THE LINKED LIST
+
+int displayList(const LinkedList* list) {
+
+    while (list != NULL) {
+        printf("%d ", list->number);
+        list = list->next;
     }
     printf("\n");
     return 0;
 }
-*/
-int sizeList(LinkedList *list) {
-    if (list == NULL) {
-        exit(EXIT_FAILURE);
-    }
+
+// THE SIZE OF LINKED LIST
+
+
+
+void sizeList(LinkedList *list) {
     int size = 0;
-    LinkedList *current = list;
-    printf("%p", current);
-    while (current != NULL) {
+    while (list != NULL) {
         size++;
-
-        current = current->next;
-
+        list = list->next;
     }
-    printf("\nThe size of the list is: %d \n", size);
-
-    // printf("\nThe size of the list is: %d \n", size);
-    return 0;
+    printf("The size of our linkedList is: %d\n", size);
 }
 
-/*
+// PRINT EACH TERMS OF THE LIST AND THEIR ADDRESSES
+
 void address_value(LinkedList *list) {
-    if (list == NULL) {
-        exit(EXIT_FAILURE);
+
+    while (list != NULL) {
+        printf("<address of the number: %p  > Number: %d \n", (void*) list ,  list->number);
+        list = list->next;
     }
-
-    Element *current = list->first;
-
-    while (current != NULL) {
-        printf("<address of the number: %p  > Number: %d \n", (void*) current ,  current->number);
-        current = current->next;
-    }
-
+    printf("\n");
 }
 
-LinkedList* deleteFirstNumber(List *list) {
-    if (list == NULL) {
-        exit(EXIT_FAILURE);
+// DELETE THE FIRST TERM OF THE LIST
+
+
+void deleteFirstNumber(LinkedList** list) {
+    if (*list == NULL) {
+        printf("No terms in your list");
+        return;
     }
 
-    LinkedList *deleteList = initialization();
-    if (deleteList->first == NULL) {
-        exit(EXIT_FAILURE);
+    LinkedList *current = *list;
+    *list = (*list)->next;
+    free(current);
+}
+
+void deleteLastNumber(LinkedList** list) {
+    // list empty
+    if (*list == NULL) {
+        printf("No terms in your list");
+        return;
     }
 
+    //list with one term
+    if ((*list)->next == NULL) {
+        free(*list);
+        *list = NULL;
+        return;
+    }
 
-
-    Element *delete = list->first;
-    list->first = list->first->next;
-
-    Element *current = list->first;
-
-    while (current != NULL) {
-        insertion(deleteList,current->number);
+    LinkedList* current = *list;
+    while(current->next->next != NULL) {
         current = current->next;
-        //printf("%d ", current->number);
     }
 
-    free(delete);
-    return deleteList;
-}*/
+    free(current->next);
+    current->next = NULL;
+}
+
+void addLastNumber(LinkedList** list, int newnumber) {
+    insertion(list, newnumber);
+    displayList(*list);
+}
+
+void addFirstNumber(LinkedList** list, int newnumber) {
+    if (*list == NULL) {
+        printf("No terms in your list");
+        return;
+    }
+    LinkedList *newnode = malloc(sizeof(*newnode));
+    newnode->number = newnumber;
+    newnode->next = *list;
+    *list = newnode;
+    displayList(*list);
+}
+
+// CONCATENATION OF LISTS
+
+void concatenation(LinkedList** list1, LinkedList** list2) {
+    if (*list1 == NULL) {
+        printf("No terms in your list1");
+    }
+
+    else if (*list2 == NULL) {
+        printf("No terms in your list2");
+    }
+
+    else {
+        LinkedList* current = *list1;
+        while(current->next != NULL) {
+            current = current->next;
+        }
+        current->next = *list2;
+
+        while(current->next->next != NULL) {
+            current = current->next;
+        }
+    }
+}
+
+LinkedList *squaredList(LinkedList* list) {
+
+        LinkedList* newList = NULL;
+
+        LinkedList *current = list;
+        while (current != NULL) {
+            insertion(&newList, current->number * current->number);
+            current = current->next;
+        }
+        return newList;
+    }
