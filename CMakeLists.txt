@@ -6,6 +6,8 @@ set(CMAKE_C_STANDARD 11)
 add_executable(is_os_tp1 main.c
         memory.h
         memory.c
-        main.h)
+        main.h
+        projection.h
+        projection.c)
 
 target_compile_options(is_os_tp1 PRIVATE -Wall -Wextra)

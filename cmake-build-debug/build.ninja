@@ -61,6 +61,12 @@ build CMakeFiles/is_os_tp1.dir/memory.c.o: C_COMPILER__is_os_tp1_unscanned_Debug
   OBJECT_DIR = CMakeFiles/is_os_tp1.dir
   OBJECT_FILE_DIR = CMakeFiles/is_os_tp1.dir
 
+build CMakeFiles/is_os_tp1.dir/projection.c.o: C_COMPILER__is_os_tp1_unscanned_Debug /home/louismmassin/CLionProjects/is_os_tp1/projection.c || cmake_object_order_depends_target_is_os_tp1
+  DEP_FILE = CMakeFiles/is_os_tp1.dir/projection.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always -Wall -Wextra
+  OBJECT_DIR = CMakeFiles/is_os_tp1.dir
+  OBJECT_FILE_DIR = CMakeFiles/is_os_tp1.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target is_os_tp1
@@ -69,7 +75,7 @@ build CMakeFiles/is_os_tp1.dir/memory.c.o: C_COMPILER__is_os_tp1_unscanned_Debug
 #############################################
 # Link the executable is_os_tp1
 
-build is_os_tp1: C_EXECUTABLE_LINKER__is_os_tp1_Debug CMakeFiles/is_os_tp1.dir/main.c.o CMakeFiles/is_os_tp1.dir/memory.c.o
+build is_os_tp1: C_EXECUTABLE_LINKER__is_os_tp1_Debug CMakeFiles/is_os_tp1.dir/main.c.o CMakeFiles/is_os_tp1.dir/memory.c.o CMakeFiles/is_os_tp1.dir/projection.c.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/is_os_tp1.dir
   POST_BUILD = :
