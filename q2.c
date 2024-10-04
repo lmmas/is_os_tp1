@@ -12,41 +12,43 @@
 #include <unistd.h>
 
 
-void getSizeFile() {
+void q2(char * filePath) {
 
     printf("DEBUG \n");
 
-    int fileDescription = open("/home/cassandre/Documents/TP réseau/test.txt",O_RDONLY);
+    int fileDescriptor = open(filePath,O_CREAT|O_RDWR);
 
-    if (fileDescription == -1) {
+    if (fileDescriptor == -1) {
         perror("Error opening file");
     }
 
     struct stat statbuf;
-    if (stat("/home/cassandre/Documents/TP réseau/test.txt", &statbuf) == -1) {
+    if (fstat(fileDescriptor, &statbuf) == -1) {
         perror("Error opening file");
-        close(fileDescription);
-    }
-
-    if (statbuf.st_size == 0) {
-        printf("Empty File.\n");
-        close(fileDescription);
+        close(fileDescriptor);
     }
 
     printf("File size: %ld\n", statbuf.st_size);
 
 
-    char *file_mappe = mmap(NULL, statbuf.st_size, PROT_READ, MAP_PRIVATE, fileDescription, 0);
-    if (file_mappe == MAP_FAILED) {
+    char *file_map = mmap(NULL, statbuf.st_size, PROT_READ|PROT_WRITE, MAP_SHARED, fileDescriptor, 0);
+    if (file_map == MAP_FAILED) {
         perror("Error memory mapping");
-        close(fileDescription);
+        close(fileDescriptor);
     }
+    else {
+        printf("What's in the file :\n%.*s\n", (int)statbuf.st_size, file_map);
+        int textSize = statbuf.st_size - 1;
+        for(int i = 0; i < textSize / 2; i++) {
+            char tempChar = *(file_map + i);
+            *(file_map + i) = *(file_map + textSize - i - 1);
+            *(file_map + textSize - i - 1) = tempChar;
+        }
+        printf("Edited file :\n%.*s\n", (int)statbuf.st_size, file_map);
+        munmap(file_map, statbuf.st_size);
 
-    printf("What's in the file :\n%.*s\n", (int)statbuf.st_size, file_mappe);
-
-    munmap(file_mappe, statbuf.st_size);
-
-    close(fileDescription);
+        close(fileDescriptor);
+    }
 }
 
 

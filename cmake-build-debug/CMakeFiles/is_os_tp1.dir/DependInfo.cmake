@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/cassandre/CLionProjects/is_os_tp1/main.c" "CMakeFiles/is_os_tp1.dir/main.c.o" "gcc" "CMakeFiles/is_os_tp1.dir/main.c.o.d"
-  "/home/cassandre/CLionProjects/is_os_tp1/memory.c" "CMakeFiles/is_os_tp1.dir/memory.c.o" "gcc" "CMakeFiles/is_os_tp1.dir/memory.c.o.d"
-  "/home/cassandre/CLionProjects/is_os_tp1/q2.c" "CMakeFiles/is_os_tp1.dir/q2.c.o" "gcc" "CMakeFiles/is_os_tp1.dir/q2.c.o.d"
-  "/home/cassandre/CLionProjects/is_os_tp1/q3.c" "CMakeFiles/is_os_tp1.dir/q3.c.o" "gcc" "CMakeFiles/is_os_tp1.dir/q3.c.o.d"
+  "/home/louismmassin/CLionProjects/is_os_tp1/main.c" "CMakeFiles/is_os_tp1.dir/main.c.o" "gcc" "CMakeFiles/is_os_tp1.dir/main.c.o.d"
+  "/home/louismmassin/CLionProjects/is_os_tp1/memory.c" "CMakeFiles/is_os_tp1.dir/memory.c.o" "gcc" "CMakeFiles/is_os_tp1.dir/memory.c.o.d"
+  "/home/louismmassin/CLionProjects/is_os_tp1/q2.c" "CMakeFiles/is_os_tp1.dir/q2.c.o" "gcc" "CMakeFiles/is_os_tp1.dir/q2.c.o.d"
+  "/home/louismmassin/CLionProjects/is_os_tp1/q3.c" "CMakeFiles/is_os_tp1.dir/q3.c.o" "gcc" "CMakeFiles/is_os_tp1.dir/q3.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

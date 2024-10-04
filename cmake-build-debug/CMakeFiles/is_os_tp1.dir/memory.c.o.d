@@ -1,7 +1,7 @@
 CMakeFiles/is_os_tp1.dir/memory.c.o: \
- /home/cassandre/CLionProjects/is_os_tp1/memory.c \
+ /home/louismmassin/CLionProjects/is_os_tp1/memory.c \
  /usr/include/stdc-predef.h \
- /home/cassandre/CLionProjects/is_os_tp1/memory.h /usr/include/stdio.h \
+ /home/louismmassin/CLionProjects/is_os_tp1/memory.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \

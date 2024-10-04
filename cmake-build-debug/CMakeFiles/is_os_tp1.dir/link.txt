@@ -1,1 +1,1 @@
-/bin/gcc -g CMakeFiles/is_os_tp1.dir/main.c.o CMakeFiles/is_os_tp1.dir/memory.c.o CMakeFiles/is_os_tp1.dir/q3.c.o CMakeFiles/is_os_tp1.dir/q2.c.o -o is_os_tp1
+/usr/bin/cc -g CMakeFiles/is_os_tp1.dir/main.c.o CMakeFiles/is_os_tp1.dir/memory.c.o CMakeFiles/is_os_tp1.dir/q3.c.o CMakeFiles/is_os_tp1.dir/q2.c.o -o is_os_tp1

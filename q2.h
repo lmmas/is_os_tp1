@@ -5,6 +5,6 @@
 #ifndef Q2_H
 #define Q2_H
 
-void getSizeFile();
+void q2(char * filepath);
 
 #endif //Q2_H

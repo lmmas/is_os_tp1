@@ -1,6 +1,6 @@
 CMakeFiles/is_os_tp1.dir/q3.c.o: \
- /home/cassandre/CLionProjects/is_os_tp1/q3.c /usr/include/stdc-predef.h \
- /usr/include/stdio.h \
+ /home/louismmassin/CLionProjects/is_os_tp1/q3.c \
+ /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -49,4 +49,4 @@ CMakeFiles/is_os_tp1.dir/q3.c.o: \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /home/cassandre/CLionProjects/is_os_tp1/q3.h
+ /home/louismmassin/CLionProjects/is_os_tp1/q3.h

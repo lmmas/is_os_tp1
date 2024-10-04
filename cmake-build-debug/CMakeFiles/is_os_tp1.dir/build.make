@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/cassandre/Téléchargements/CLion-2024.2.2/clion-2024.2.2/bin/cmake/linux/x64/bin/cmake
+CMAKE_COMMAND = /snap/clion/296/bin/cmake/linux/x64/bin/cmake
 
 # The command to remove a file.
-RM = /home/cassandre/Téléchargements/CLion-2024.2.2/clion-2024.2.2/bin/cmake/linux/x64/bin/cmake -E rm -f
+RM = /snap/clion/296/bin/cmake/linux/x64/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cassandre/CLionProjects/is_os_tp1
+CMAKE_SOURCE_DIR = /home/louismmassin/CLionProjects/is_os_tp1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cassandre/CLionProjects/is_os_tp1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/louismmassin/CLionProjects/is_os_tp1/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/is_os_tp1.dir/depend.make
@@ -70,60 +70,60 @@ include CMakeFiles/is_os_tp1.dir/progress.make
 include CMakeFiles/is_os_tp1.dir/flags.make
 
 CMakeFiles/is_os_tp1.dir/main.c.o: CMakeFiles/is_os_tp1.dir/flags.make
-CMakeFiles/is_os_tp1.dir/main.c.o: /home/cassandre/CLionProjects/is_os_tp1/main.c
+CMakeFiles/is_os_tp1.dir/main.c.o: /home/louismmassin/CLionProjects/is_os_tp1/main.c
 CMakeFiles/is_os_tp1.dir/main.c.o: CMakeFiles/is_os_tp1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cassandre/CLionProjects/is_os_tp1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/is_os_tp1.dir/main.c.o"
-	/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/is_os_tp1.dir/main.c.o -MF CMakeFiles/is_os_tp1.dir/main.c.o.d -o CMakeFiles/is_os_tp1.dir/main.c.o -c /home/cassandre/CLionProjects/is_os_tp1/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/louismmassin/CLionProjects/is_os_tp1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/is_os_tp1.dir/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/is_os_tp1.dir/main.c.o -MF CMakeFiles/is_os_tp1.dir/main.c.o.d -o CMakeFiles/is_os_tp1.dir/main.c.o -c /home/louismmassin/CLionProjects/is_os_tp1/main.c
 
 CMakeFiles/is_os_tp1.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/is_os_tp1.dir/main.c.i"
-	/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cassandre/CLionProjects/is_os_tp1/main.c > CMakeFiles/is_os_tp1.dir/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/louismmassin/CLionProjects/is_os_tp1/main.c > CMakeFiles/is_os_tp1.dir/main.c.i
 
 CMakeFiles/is_os_tp1.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/is_os_tp1.dir/main.c.s"
-	/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cassandre/CLionProjects/is_os_tp1/main.c -o CMakeFiles/is_os_tp1.dir/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/louismmassin/CLionProjects/is_os_tp1/main.c -o CMakeFiles/is_os_tp1.dir/main.c.s
 
 CMakeFiles/is_os_tp1.dir/memory.c.o: CMakeFiles/is_os_tp1.dir/flags.make
-CMakeFiles/is_os_tp1.dir/memory.c.o: /home/cassandre/CLionProjects/is_os_tp1/memory.c
+CMakeFiles/is_os_tp1.dir/memory.c.o: /home/louismmassin/CLionProjects/is_os_tp1/memory.c
 CMakeFiles/is_os_tp1.dir/memory.c.o: CMakeFiles/is_os_tp1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cassandre/CLionProjects/is_os_tp1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/is_os_tp1.dir/memory.c.o"
-	/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/is_os_tp1.dir/memory.c.o -MF CMakeFiles/is_os_tp1.dir/memory.c.o.d -o CMakeFiles/is_os_tp1.dir/memory.c.o -c /home/cassandre/CLionProjects/is_os_tp1/memory.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/louismmassin/CLionProjects/is_os_tp1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/is_os_tp1.dir/memory.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/is_os_tp1.dir/memory.c.o -MF CMakeFiles/is_os_tp1.dir/memory.c.o.d -o CMakeFiles/is_os_tp1.dir/memory.c.o -c /home/louismmassin/CLionProjects/is_os_tp1/memory.c
 
 CMakeFiles/is_os_tp1.dir/memory.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/is_os_tp1.dir/memory.c.i"
-	/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cassandre/CLionProjects/is_os_tp1/memory.c > CMakeFiles/is_os_tp1.dir/memory.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/louismmassin/CLionProjects/is_os_tp1/memory.c > CMakeFiles/is_os_tp1.dir/memory.c.i
 
 CMakeFiles/is_os_tp1.dir/memory.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/is_os_tp1.dir/memory.c.s"
-	/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cassandre/CLionProjects/is_os_tp1/memory.c -o CMakeFiles/is_os_tp1.dir/memory.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/louismmassin/CLionProjects/is_os_tp1/memory.c -o CMakeFiles/is_os_tp1.dir/memory.c.s
 
 CMakeFiles/is_os_tp1.dir/q3.c.o: CMakeFiles/is_os_tp1.dir/flags.make
-CMakeFiles/is_os_tp1.dir/q3.c.o: /home/cassandre/CLionProjects/is_os_tp1/q3.c
+CMakeFiles/is_os_tp1.dir/q3.c.o: /home/louismmassin/CLionProjects/is_os_tp1/q3.c
 CMakeFiles/is_os_tp1.dir/q3.c.o: CMakeFiles/is_os_tp1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cassandre/CLionProjects/is_os_tp1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/is_os_tp1.dir/q3.c.o"
-	/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/is_os_tp1.dir/q3.c.o -MF CMakeFiles/is_os_tp1.dir/q3.c.o.d -o CMakeFiles/is_os_tp1.dir/q3.c.o -c /home/cassandre/CLionProjects/is_os_tp1/q3.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/louismmassin/CLionProjects/is_os_tp1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/is_os_tp1.dir/q3.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/is_os_tp1.dir/q3.c.o -MF CMakeFiles/is_os_tp1.dir/q3.c.o.d -o CMakeFiles/is_os_tp1.dir/q3.c.o -c /home/louismmassin/CLionProjects/is_os_tp1/q3.c
 
 CMakeFiles/is_os_tp1.dir/q3.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/is_os_tp1.dir/q3.c.i"
-	/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cassandre/CLionProjects/is_os_tp1/q3.c > CMakeFiles/is_os_tp1.dir/q3.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/louismmassin/CLionProjects/is_os_tp1/q3.c > CMakeFiles/is_os_tp1.dir/q3.c.i
 
 CMakeFiles/is_os_tp1.dir/q3.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/is_os_tp1.dir/q3.c.s"
-	/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cassandre/CLionProjects/is_os_tp1/q3.c -o CMakeFiles/is_os_tp1.dir/q3.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/louismmassin/CLionProjects/is_os_tp1/q3.c -o CMakeFiles/is_os_tp1.dir/q3.c.s
 
 CMakeFiles/is_os_tp1.dir/q2.c.o: CMakeFiles/is_os_tp1.dir/flags.make
-CMakeFiles/is_os_tp1.dir/q2.c.o: /home/cassandre/CLionProjects/is_os_tp1/q2.c
+CMakeFiles/is_os_tp1.dir/q2.c.o: /home/louismmassin/CLionProjects/is_os_tp1/q2.c
 CMakeFiles/is_os_tp1.dir/q2.c.o: CMakeFiles/is_os_tp1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cassandre/CLionProjects/is_os_tp1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/is_os_tp1.dir/q2.c.o"
-	/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/is_os_tp1.dir/q2.c.o -MF CMakeFiles/is_os_tp1.dir/q2.c.o.d -o CMakeFiles/is_os_tp1.dir/q2.c.o -c /home/cassandre/CLionProjects/is_os_tp1/q2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/louismmassin/CLionProjects/is_os_tp1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/is_os_tp1.dir/q2.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/is_os_tp1.dir/q2.c.o -MF CMakeFiles/is_os_tp1.dir/q2.c.o.d -o CMakeFiles/is_os_tp1.dir/q2.c.o -c /home/louismmassin/CLionProjects/is_os_tp1/q2.c
 
 CMakeFiles/is_os_tp1.dir/q2.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/is_os_tp1.dir/q2.c.i"
-	/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cassandre/CLionProjects/is_os_tp1/q2.c > CMakeFiles/is_os_tp1.dir/q2.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/louismmassin/CLionProjects/is_os_tp1/q2.c > CMakeFiles/is_os_tp1.dir/q2.c.i
 
 CMakeFiles/is_os_tp1.dir/q2.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/is_os_tp1.dir/q2.c.s"
-	/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cassandre/CLionProjects/is_os_tp1/q2.c -o CMakeFiles/is_os_tp1.dir/q2.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/louismmassin/CLionProjects/is_os_tp1/q2.c -o CMakeFiles/is_os_tp1.dir/q2.c.s
 
 # Object files for target is_os_tp1
 is_os_tp1_OBJECTS = \
@@ -141,7 +141,7 @@ is_os_tp1: CMakeFiles/is_os_tp1.dir/q3.c.o
 is_os_tp1: CMakeFiles/is_os_tp1.dir/q2.c.o
 is_os_tp1: CMakeFiles/is_os_tp1.dir/build.make
 is_os_tp1: CMakeFiles/is_os_tp1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/cassandre/CLionProjects/is_os_tp1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable is_os_tp1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/louismmassin/CLionProjects/is_os_tp1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable is_os_tp1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/is_os_tp1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -153,6 +153,6 @@ CMakeFiles/is_os_tp1.dir/clean:
 .PHONY : CMakeFiles/is_os_tp1.dir/clean
 
 CMakeFiles/is_os_tp1.dir/depend:
-	cd /home/cassandre/CLionProjects/is_os_tp1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cassandre/CLionProjects/is_os_tp1 /home/cassandre/CLionProjects/is_os_tp1 /home/cassandre/CLionProjects/is_os_tp1/cmake-build-debug /home/cassandre/CLionProjects/is_os_tp1/cmake-build-debug /home/cassandre/CLionProjects/is_os_tp1/cmake-build-debug/CMakeFiles/is_os_tp1.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/louismmassin/CLionProjects/is_os_tp1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/louismmassin/CLionProjects/is_os_tp1 /home/louismmassin/CLionProjects/is_os_tp1 /home/louismmassin/CLionProjects/is_os_tp1/cmake-build-debug /home/louismmassin/CLionProjects/is_os_tp1/cmake-build-debug /home/louismmassin/CLionProjects/is_os_tp1/cmake-build-debug/CMakeFiles/is_os_tp1.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/is_os_tp1.dir/depend
 

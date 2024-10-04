@@ -1,6 +1,6 @@
 CMakeFiles/is_os_tp1.dir/q2.c.o: \
- /home/cassandre/CLionProjects/is_os_tp1/q2.c /usr/include/stdc-predef.h \
- /usr/include/fcntl.h /usr/include/features.h \
+ /home/louismmassin/CLionProjects/is_os_tp1/q2.c \
+ /usr/include/stdc-predef.h /usr/include/fcntl.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
  /usr/include/x86_64-linux-gnu/bits/timesize.h \
@@ -60,7 +60,7 @@ CMakeFiles/is_os_tp1.dir/q2.c.o: \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /home/cassandre/CLionProjects/is_os_tp1/q2.h /usr/include/unistd.h \
+ /home/louismmassin/CLionProjects/is_os_tp1/q2.h /usr/include/unistd.h \
  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
