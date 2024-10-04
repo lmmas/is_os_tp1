@@ -16,13 +16,13 @@ struct LinkedList {
 
 LinkedList *initialization(int firstnumber);
 
-void insertion(LinkedList **list, int newnumber);
+void insertion(LinkedList** list, int newnumber);
 
-int displayList(const LinkedList *list);
+int displayList(const LinkedList* list);
 
-void sizeList(LinkedList *list);
+void sizeList(LinkedList* list);
 
-void address_value(LinkedList *list);
+void address_value(LinkedList* list);
 
 void deleteFirstNumber(LinkedList** list);
 

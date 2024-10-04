@@ -45,7 +45,7 @@ void insertion(LinkedList** list, int newnumber) {
 int displayList(const LinkedList* list) {
 
     while (list != NULL) {
-        printf("%d ", list->number);
+        printf("%d  ", list->number);
         list = list->next;
     }
     printf("\n");
